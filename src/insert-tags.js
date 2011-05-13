@@ -62,8 +62,14 @@ GENTICS.Aloha.InsertTags.createButtons = function () {
 GENTICS.Aloha.InsertTags.insertTag = function ( tag ) {
     var 
       range = GENTICS.Aloha.Selection.getRangeObject(),
-      newTag = jQuery('<' + tag + ' />')
+      newTag
     ;
+    
+    if (tag == 'br')
+      newTag = jQuery('<p>&nbsp;</p>');
+    else
+      newTag = jQuery('<' + tag + ' />');
+    
     GENTICS.Utils.Dom.insertIntoDOM(newTag, range, jQuery(GENTICS.Aloha.activeEditable.obj));
 };
 
