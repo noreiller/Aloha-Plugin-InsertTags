@@ -36,7 +36,7 @@ GENTICS.Aloha.InsertTags.createButtons = function () {
     var that = this;
 
     //iterate configuration array an push buttons to buttons array
-    jQuery.each(GENTICS.Aloha.Format.config, function(j, button) {
+    jQuery.each(GENTICS.Aloha.InsertTags.config, function(j, button) {
       
       that.buttons[button] = new GENTICS.Aloha.ui.Button({
         'iconClass' : 'GENTICS_button GENTICS_inserttags_' + button,
