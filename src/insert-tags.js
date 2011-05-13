@@ -49,7 +49,7 @@ GENTICS.Aloha.InsertTags.createButtons = function () {
       });
       GENTICS.Aloha.FloatingMenu.addButton(
         scope,
-        that.buttons[button].button,
+        that.buttons[button],
         GENTICS.Aloha.i18n(GENTICS.Aloha, 'floatingmenu.tab.insert'),
         1
       );
